@@ -1,12 +1,6 @@
 {
   "version": 2,
   "devCommand": "npm start",
-  "ignore": [
-    "src/*",
-    "cypress/*",
-    "*.config.js",
-    "README.md"
-  ],
   "builds": [
     {
       "src": "api/index.js",
