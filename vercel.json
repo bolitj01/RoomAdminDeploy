@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "devCommand": "npm start",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+  "devCommand": "npm start"
 }
