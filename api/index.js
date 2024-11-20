@@ -33,7 +33,7 @@ const port = 8080;
 // Get __dirname in es6 modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const buildFolder = "dist";
+const buildFolder = "../dist";
 console.log('__dirname: ', __dirname);
 
 app.use(express.static(path.join(__dirname, buildFolder)));

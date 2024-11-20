@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node api/index.js",
     "client": "vite",
-    "server": "nodemon --inspect index.js",
+    "server": "nodemon --inspect api/index.js",
     "test": "cypress open",
     "build": "vite build",
     "lint": "eslint .",
