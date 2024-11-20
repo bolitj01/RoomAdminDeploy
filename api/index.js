@@ -43,7 +43,7 @@ app.use(express.json());
 // Serve index.html from React build folder
 app.get('/', (req, res) => {
   console.log("Home Page");
-  res.sendFile(path.resolve(__dirname, buildFolder, 'index.html'));
+  res.sendFile(path.join(__dirname, buildFolder, 'index.html'));
 });
 
 app.post("/create-rooms", async (req, res) => {
