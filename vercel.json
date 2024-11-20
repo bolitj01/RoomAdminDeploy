@@ -1,5 +1,20 @@
 {
 	"version": 2,
-	"rewrites": [{ "source": "/(.*)", "destination": "/" }],
-	"devCommand": "npm start"
+	"devCommand": "npm start",
+	"builds": [
+		{
+			"src": "index.html",
+			"use": "@vercel/static"
+		},
+		{
+			"src": "dist/**",
+			"use": "@vercel/static"
+		}
+	],
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "/dist/$1"
+		}
+	]
 }
