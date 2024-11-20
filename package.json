@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "node index.js",
     "client": "vite",
-    "server": "nodemon --inspect server.js",
+    "server": "nodemon --inspect index.js",
     "test": "cypress open",
     "build": "vite build",
     "lint": "eslint .",
